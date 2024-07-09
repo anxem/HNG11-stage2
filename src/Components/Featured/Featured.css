@@ -1,0 +1,82 @@
+.categories {
+  padding: 10px 30px;
+}
+
+.categories-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-top: 0;
+  padding: 20px;
+  box-shadow: 5px 5px 0 #d1d184;
+}
+
+.categories-grid {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+.categories-card {
+  border: none;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.categories-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.denim {
+  background-image: url("../Assets/Denim1.png");
+}
+/* Add similar classes for other categories */
+
+.categories-card button {
+  padding: 10px 20px;
+  background-color: #d1d184;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .category-grid {
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  /* .categories-card {
+      
+    } */
+
+  .categories-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .categories-title {
+    font-size: 28px;
+    line-height: 23px;
+  }
+
+  .categories-image {
+    height: 180px;
+  }
+
+  .categories-grid {
+    gap: 30px;
+  }
+}
